@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+}
+
+
+* {
+    letter-spacing: -0.5px;
+}
+
+#wrap {
+    position: relative;
+}
+
+
+
+.btn_top_wrap {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
+.btn_top_wrap .btn_top {
+    font-size: 30px;
+    color: #990011;
+}
+
+#header {
+    width: 100%;
+    background: #990011;
+}
+
+#header .header_inner {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .header_inner h1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+#header .header_inner h1 a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: url('../images/logo_white.png') no-repeat center center;
+    text-indent: -9999px;
+    background-size: contain;
+}
+
+#header .header_inner .gnb {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .header_inner .gnb li {
+    float: left;
+    padding: 0 10px;
+}
+
+#header .header_inner .gnb li a {
+    display: block;
+    color: #FCF6F5;
+    height: 25px;
+    line-height: 25px;
+}
+
+#header .header_inner .gnb .github a {
+    font-size: 25px;
+}
+
+#header .header_inner .btn_hamburger {
+    display: block;
+    width: 30px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#header .header_inner .btn_hamburger .line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #FCF6F5;
+    margin-bottom: 7px;
+}
+
+#header .header_inner .btn_hamburger .middle-line {
+    width: 22px;
+}
+
+#header .header_inner .btn_hamburger .bottom-line {
+    margin-bottom: none;
+}
+
+
+
+
+#main {
+    width: 100%;
+    height: 1000px;
+    background: #FCF6F5;
+}
+
+#footer {
+    width: 100%;
+    background: #990011;
+}
+
+#footer .footer_inner {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #FCF6F5;
+    font-size: 12px;
+}
+
+#footer .footer_inner .copyright {
+    line-height: 20px;
+}
+
+#footer .footer_inner .comment {
+    line-height: 20px;
+}
+
+
+
+
+
