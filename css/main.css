@@ -23,8 +23,8 @@ body {
 }
 
 .btn_top_wrap .btn_top {
-    font-size: 30px;
-    color: #990011;
+    font-size: 2rem;
+    color: #fff;
 }
 
 #header {
@@ -49,7 +49,7 @@ body {
 
 #header .header_inner h1 a {
     display: block;
-    width: 100px;
+    width: 60px;
     height: 40px;
     background: url('../images/logo_white.png') no-repeat center center;
     text-indent: -9999px;
@@ -72,12 +72,12 @@ body {
 #header .header_inner .gnb li a {
     display: block;
     color: #FCF6F5;
-    height: 25px;
-    line-height: 25px;
+    height: 1.5rem;
+    line-height: 1.5rem;
 }
 
 #header .header_inner .gnb .github a {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 #header .header_inner .btn_hamburger {
@@ -112,9 +112,22 @@ body {
 
 #main {
     width: 100%;
-    background: #FCF6F5;
-    height: 1000px;
+    background: #fff;
 }
+
+#main .about_wrap {
+    width: 100%;
+}
+
+#main .about_inner {
+    width: 1200px;
+    margin: 0 auto;
+
+    height: 500px;
+    border: 1px solid #000;
+}
+
+
 
 
 #main .works_wrap {
@@ -129,7 +142,12 @@ body {
 }
 
 #main .works_wrap .works_inner .tab-box {
+    margin-bottom: 50px;
+}
 
+#main .works_wrap .works_inner .tab-box .btn_tab-all {
+    display: block;
+    
 }
 
 #main .works_wrap .works_inner .tab-box .tab-list {
@@ -138,7 +156,12 @@ body {
 
 #main .works_wrap .works_inner .tab-box .tab-list li {
     display: inline-block;
-    
+}
+
+#main .works_wrap .works_inner .tab-box .tab-list li.on a {
+    background: #fcf6f5;
+    color: #990011;
+    border: 2px solid #990011;
 }
 
 #main .works_wrap .works_inner .tab-box .tab-list li:hover a {
@@ -158,6 +181,198 @@ body {
     border: 2px solid transparent;
 }
 
+#main .works_wrap .works_inner .works-box {
+    
+}
+
+#main .works_wrap .works_inner .works-box ul {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#main .works_wrap .works_inner .works-box ul li {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#main .works_wrap .works_inner .works-box ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0 solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: #fcf6f5;
+    position: relative;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .hover-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #990011;
+    z-index: 2;
+    opacity: 0.5;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#main .works_wrap .works_inner .works-box ul li:hover a .hover-mask {
+    opacity: 0.5;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .img-box {
+    height: 200px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .img-box .logo-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 40px;
+    width: 140px;
+    text-indent: -9999px;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .txt-box {
+    padding: 10px;
+    /* background: #990011; */
+    color: #000;
+    transition: color 0.3s;
+}
+
+#main .works_wrap .works_inner .works-box ul li:hover a .txt-box {
+    color: #fcf6f5;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .txt-box .site-tit {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#main .works_wrap .works_inner .works-box ul li a .txt-box .site-des {
+    font-size: 0.8rem;
+}
+
+
+/* 썸네일 및 로고 이미지 삽입 구간 --------------------------------------------------- */
+
+/* 반응형 로고 */
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box1 {
+    background: url('../images/dummylogo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box2 {
+    background: url('../images/dummylogo2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box3 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* 데스크탑 로고 */
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box1 {
+    background: url('../images/dummylogo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box2 {
+    background: url('../images/dummylogo2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box3 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* 모바일 로고 */
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box1 {
+    background: url('../images/dummylogo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box2 {
+    background: url('../images/dummylogo2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box3 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/* 반응형 썸네일 */
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box .logo-box1 {
+    background: url('../images/glovis_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box .logo-box2 {
+    background: url('../images/hn_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .img-box .logo-box3 {
+    background: url('../images/elite_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* 데스크탑 썸네일 */
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box .logo-box1 {
+    background: url('../images/posco_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box .logo-box2 {
+    background: url('../images/coffine_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .img-box .logo-box3 {
+    background: url('../images/daelim_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* 모바일 썸네일 */
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box .logo-box1 {
+    background: url('../images/posco_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box .logo-box2 {
+    background: url('../images/coffine_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .img-box .logo-box3 {
+    background: url('../images/daelim_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+
+
 
 
 
@@ -174,15 +389,15 @@ body {
     box-sizing: border-box;
     text-align: center;
     color: #FCF6F5;
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 
 #footer .footer_inner .copyright {
-    line-height: 20px;
+    line-height: 1.2rem;
 }
 
 #footer .footer_inner .comment {
-    line-height: 20px;
+    line-height: 1.2rem;
 }
 
 
