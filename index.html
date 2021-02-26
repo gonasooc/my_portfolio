@@ -7,6 +7,7 @@
     <title>gonasooc/my_portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/jquery.lineProgressbar.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -107,11 +108,11 @@
         </div>
         <div id="header">
             <div class="header_inner">
-                <h1><a href="./index.html">ㄱㄴㅅ</a></h1>
+                <h1><a href="./index.html">로고</a></h1>
                 <ul class="gnb">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="about"><a href="#">about</a></li>
+                    <li class="works"><a href="#">works</a></li>
+                    <li class="contact"><a href="#">contact</a></li>
                     <li class="github"><a href="https://github.com/gonasooc" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
                 <a href="#" class="btn_hamburger">
@@ -125,12 +126,70 @@
             <div class="about_wrap">
                 <div class="about_inner">           
                     <h2 class="about">I'm <span class="typing"></span></h2>
-                    
-
+                    <div class="skill_wrap">
+                        <h2>skills</h2>
+                        <div class="skill html">
+                            <span class="icon"><img src="./images/html5.png" alt="HTML5"></span>
+                            <span class="name">HTML</span>
+                            <span class="progressbar html-bar"></span>
+                        </div>
+                        <div class="skill css">
+                            <span class="icon"><img src="./images/css3.png" alt="CSS3"></span>
+                            <span class="name">CSS</span>
+                            <span class="progressbar css-bar"></span>
+                        </div>
+                        <div class="skill javascript">
+                            <span class="icon"><img src="./images/javascript.png" alt="JavaScript"></span>
+                            <span class="name">JavaScript</span>
+                            <span class="progressbar js-bar"></span>
+                        </div>
+                        <div class="skill jquery">
+                            <span class="icon"><img src="./images/jquery.png" alt="JQuery"></span>
+                            <span class="name">JQuery</span>
+                            <span class="progressbar jq-bar"></span>
+                        </div>
+                        <div class="skill bootstrap">
+                            <span class="icon"><img src="./images/bootstrap.png" alt="Bootstrap"></span>
+                            <span class="name">Bootstrap</span>
+                            <span class="progressbar b-bar"></span>
+                        </div>
+                        <div class="skill photoshop">
+                            <span class="icon"><img src="./images/photoshop.png" alt="Photoshop"></span>
+                            <span class="name">Photoshop</span>
+                            <span class="progressbar ps-bar"></span>
+                        </div>
+                        <div class="skill illustrator">
+                            <span class="icon"><img src="./images/Illustrator.png" alt="Illustrator"></span>
+                            <span class="name">Illustrator</span>
+                            <span class="progressbar ai-bar"></span>
+                        </div>
+                    </div>
+                    <div class="license_wrap">
+                        <h2>license</h2>
+                        <ul class="license-list">
+                            <li>
+                                <span class="license-name">GTQ포토샵1급</span>
+                                <span class="license-date">2021.01</span>
+                            </li>
+                            <li>
+                                <span class="license-name">컴퓨터활용능력2급</span>
+                                <span class="license-date">2009.03</span>
+                            </li>
+                            <li>
+                                <span class="license-name">사무자동화산업기사</span>
+                                <span class="license-date">2008.12</span>
+                            </li>
+                            <li>
+                                <span class="license-name">유통관리사2급</span>
+                                <span class="license-date">2008.09</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="works_wrap">
                 <div class="works_inner">
+                    <h2>works</h2>
                     <div class="tab-box">
                         <ul class="tab-list">
                             <li class="on btn_all"><a href="#">all</a></li>
@@ -144,9 +203,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box1">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box1"></div>
-                                        <div class="logo-box logo-box1">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">현대글로비스</h3>
@@ -157,9 +216,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box2">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box2"></div>
-                                        <div class="logo-box logo-box2">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">호텔농심</h3>
@@ -170,9 +229,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box3">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box3"></div>
-                                        <div class="logo-box logo-box3">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">elite</h3>
@@ -185,9 +244,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box1">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box1"></div>
-                                        <div class="logo-box logo-box1">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">포스코</h3>
@@ -198,9 +257,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box2">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box2"></div>
-                                        <div class="logo-box logo-box2">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">커핀그루나루</h3>
@@ -211,9 +270,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box3">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box3"></div>
-                                        <div class="logo-box logo-box3">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">DL이앤씨</h3>
@@ -226,9 +285,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box1">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box1"></div>
-                                        <div class="logo-box logo-box1">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">아트박스</h3>
@@ -239,9 +298,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box2">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box2"></div>
-                                        <div class="logo-box logo-box2">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">아쿠아리움</h3>
@@ -252,9 +311,9 @@
                             <li>
                                 <a href="#">
                                     <div class="hover-mask"></div>
+                                    <div class="logo-box logo-box3">로고</div>
                                     <div class="img-box">
                                         <div class="thumbnail-box thumbnail-box3"></div>
-                                        <div class="logo-box logo-box3">로고</div>
                                     </div>
                                     <div class="txt-box">
                                         <h3 class="site-tit">LG헬로비전</h3>
@@ -262,10 +321,17 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-
-                        
+                        </ul>                        
                     </div>
+                </div>
+            </div>
+            <div class="contact_wrap">
+                <div class="contact_inner">
+                    <h2>infomation</h2>
+                    <p class="name"><span><i class="fas fa-user-alt"></i></span>최관수</p>
+                    <p class="phone-number"><span><i class="fas fa-mobile-alt"></i></span>010-2548-9908</p>
+                    <p class="email"><span><i class="far fa-envelope"></i></span>doupler@gmail.com</p>
+                    <p class="kakao"><span><i class="far fa-comment"></i></span>gonasooc</p>
                 </div>
             </div>
         </div>
@@ -286,6 +352,7 @@
 <script src="./js/jquery-3.5.0.min.js"></script>
 <script src="./js/all.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="./js/jquery.lineProgressbar.js"></script>
 <script src="./js/main.js"></script>
 
 </body>

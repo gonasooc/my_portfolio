@@ -1,6 +1,6 @@
 $(function(){
 
-    $('a').attr('href', 'javascript:;');
+    // $('a').attr('href', 'javascript:;');
 
     $('.btn_top_wrap').click(function(){
         $('body, html').animate({'scrollTop':0}, 500)
@@ -52,24 +52,82 @@ $(function(){
         $('body, html').css({'overflow':'auto'});
     });
 
+    $('.gnb > li').click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+    })
+
     $(window).scroll(function(){
         const windowScrollValue = $(this).scrollTop();
         console.log(windowScrollValue);
-        if(windowScrollValue > 80){
-            $('#header').addClass('on');
+        if(windowScrollValue >= 80){
+            $('#header, .btn_top_wrap').addClass('on');
         } else {
-            $('#header').removeClass('on');
+            $('#header, .btn_top_wrap').removeClass('on');
         }
     })
 
 
 
     var typed = new Typed('.typing', {
-        strings: ["a creative man.", "a man for your team.", "a wordsmith.", "pixel perfect."],
+        strings: ["Joel.", "a creative man.", "a man for your team.", "a wordsmith.", "pixel perfect."],
         typeSpeed: 60,
         loop: true
       });
 
+    // $('#progressbar1').LineProgressbar({
+    //     percentage: 95
+    // });
+
+    $('.html-bar').LineProgressbar({
+        percentage: 90,
+        fillBackgroundColor: '#e44d26',
+        radius: '2px'
+    });
+    $('.css-bar').LineProgressbar({
+        percentage: 80,
+        fillBackgroundColor: '#264de4',
+        radius: '2px'
+    });
+    $('.js-bar').LineProgressbar({
+        percentage: 70,
+        fillBackgroundColor: '#f7df1e',
+        radius: '2px'
+    });
+    $('.jq-bar').LineProgressbar({
+        percentage: 80,
+        fillBackgroundColor: '#116baf',
+        radius: '2px'
+    });
+    $('.b-bar').LineProgressbar({
+        percentage: 70,
+        fillBackgroundColor: '#563d7c',
+        radius: '2px'
+    });
+    $('.ps-bar').LineProgressbar({
+        percentage: 90,
+        fillBackgroundColor: '#00c8ff',
+        radius: '2px'
+    });
+    $('.ai-bar').LineProgressbar({
+        percentage: 70,
+        fillBackgroundColor: '#ff7c00',
+        radius: '2px'
+    });
+
+
+    const aboutNum = $('.about_wrap').offset().top - 80;
+    const worksNum = $('.works_wrap').offset().top - 160;
+    const contactNum = $('.contact_wrap').offset().top - 160;
+    // console.log(contactNum);
+    $('.about').click(function(){
+        $('body, html').animate({'scrollTop':aboutNum});
+    })
+    $('.works').click(function(){
+        $('body, html').animate({'scrollTop':worksNum});
+    })
+    $('.contact').click(function(){
+        $('body, html').animate({'scrollTop':contactNum});
+    })
 
 
 })

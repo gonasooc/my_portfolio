@@ -3,8 +3,6 @@ http://kallisto.cafe24.com/web/upload/portfolio/
 http://wndms569.cafe24.com/web/upload/portfolio/jueun/
 http://sujin4718.cafe24.com/web/portfolio_final/portfolio7/index.html
 
-http://mihyang33.dothome.co.kr/Chameleon/index.html
-http://wjsthfwod2.dothome.co.kr/sol/index.html
 
 
 http://eh95.dothome.co.kr/portfolio/intro.html
@@ -27,13 +25,13 @@ http://www.hangar.co/
 http://euntori.com/
 
 http://sasunflower.com/
+http://www.justny.co.kr/
 
 https://www.joaobairrada.com/projects
 
 http://crystal89.co.kr/
 
 
-a creative man.
-a man for your team.
-a wordsmith
-pixel perfect
+
+
+https://kingrayhan.github.io/LineProgressbar/installation.html
