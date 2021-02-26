@@ -52,6 +52,16 @@ $(function(){
         $('body, html').css({'overflow':'auto'});
     });
 
+    $(window).scroll(function(){
+        const windowScrollValue = $(this).scrollTop();
+        console.log(windowScrollValue);
+        if(windowScrollValue > 80){
+            $('#header').addClass('on');
+        } else {
+            $('#header').removeClass('on');
+        }
+    })
+
 
 
     var typed = new Typed('.typing', {

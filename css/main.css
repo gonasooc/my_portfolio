@@ -132,6 +132,16 @@ body {
     background: #990011;
 }
 
+#header.on {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    background: #fcf6f5;
+    opacity: 0.9;
+    border-bottom: 1px solid #990011;
+}
+
 #header .header_inner {
     width: 1200px;
     height: 80px;
@@ -156,6 +166,11 @@ body {
     background-size: contain;
 }
 
+#header.on .header_inner h1 a {
+    background: url('../images/logo_red.png') no-repeat center center;
+    background-size: contain;
+}
+
 #header .header_inner .gnb {
     overflow: hidden;
     position: absolute;
@@ -174,6 +189,10 @@ body {
     color: #FCF6F5;
     height: 1.5rem;
     line-height: 1.5rem;
+}
+
+#header.on .header_inner .gnb li a {
+    color: #990011;
 }
 
 #header .header_inner .gnb .github a {
@@ -270,26 +289,26 @@ body {
 }
 
 #main .works_wrap .works_inner .tab-box .tab-list li.on a {
-    background: #fcf6f5;
-    color: #990011;
-    border: 2px solid #990011;
+    background: #990011;
+    color: #fcf6f5;
+    border: 2px solid transparent;
 }
 
 #main .works_wrap .works_inner .tab-box .tab-list li:hover a {
-    background: #fcf6f5;
-    color: #990011;
-    border: 2px solid #990011;
+    background: #990011;
+    color: #fcf6f5;
     box-sizing: border-box;
+    border: 2px solid transparent;
 }
 
 #main .works_wrap .works_inner .tab-box .tab-list li a {
     display: block;
     padding: 5px 20px;
     box-sizing: border-box;
-    background: #990011;
-    color: #fcf6f5;
+    background: #fcf6f5;
+    color: #990011;
+    border: 2px solid #990011;
     transition: all 0.5s;
-    border: 2px solid transparent;
 }
 
 #main .works_wrap .works_inner .works-box {
