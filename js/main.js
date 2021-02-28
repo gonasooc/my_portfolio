@@ -10,6 +10,7 @@ $(function(){
         const tabIndexNum = $(this).index()-1;
         console.log(tabIndexNum);
         $('.works-box ul').hide();
+
         $('.works-box ul').eq(tabIndexNum).show();
         $(this).addClass('on').siblings().removeClass('on');
     })
@@ -18,6 +19,8 @@ $(function(){
         $('.works-box ul').show();
     })
 
+
+    // var swForClose = true;
     $('.responsive-list > li').click(function(){
         const IndexNum = $(this).index();
         console.log(IndexNum);
@@ -25,6 +28,8 @@ $(function(){
         $('.cover').fadeIn();
         $('.responsive-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
+        // swForClose = false;
+        // console.log(swForClose);
     });
 
     $('.desktop-list > li').click(function(){
@@ -34,6 +39,9 @@ $(function(){
         $('.cover').fadeIn();
         $('.desktop-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
+        // swForClose = false;
+        // console.log(swForClose);
+
     });
 
     $('.mobile-list > li').click(function(){
@@ -43,6 +51,9 @@ $(function(){
         $('.cover').fadeIn();
         $('.mobile-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
+        // swForClose = false;
+        // console.log(swForClose);
+
     });
 
     $('.btn_detail-close').click(function(){
@@ -50,7 +61,23 @@ $(function(){
         $('.detail-box').fadeOut();
         $('.detail').hide();
         $('body, html').css({'overflow':'auto'});
+        // swForClose = true;
+        // console.log(swForClose);
+
     });
+    
+    // if(swForClose == false){
+    //     $('body, html').click(function(e){
+    //         if(!$(e.target).hasClass('.detail-box')){
+    //             $('.cover').fadeOut();
+    //             $('.detail-box').fadeOut();
+    //             $('.detail').hide();
+    //             $('body, html').css({'overflow':'auto'});
+    //             swForClose = true;
+    //             console.log(swForClose);
+    //         }
+    //     });
+    // }
 
     $('.gnb > li').click(function(){
         $(this).addClass('on').siblings().removeClass('on');
@@ -69,7 +96,7 @@ $(function(){
 
 
     var typed = new Typed('.typing', {
-        strings: ["Joel.", "a creative man.", "a man for your team.", "a wordsmith.", "pixel perfect."],
+        strings: ["@gonasooc", "a creative man.", "a man for your team.", "a wordsmith.", "pixel perfect."],
         typeSpeed: 60,
         loop: true
       });
@@ -89,7 +116,7 @@ $(function(){
         radius: '2px'
     });
     $('.js-bar').LineProgressbar({
-        percentage: 70,
+        percentage: 60,
         fillBackgroundColor: '#f7df1e',
         radius: '2px'
     });

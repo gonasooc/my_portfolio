@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 
 ::selection {
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }
 
 
@@ -41,10 +41,18 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 40;
     background: #fcf6f5;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,0.5);
     display: none;
+}
+
+.detail-box .btn_detail-close {
+    position: absolute;
+    right: -40px;
+    top: 0px;
+    font-size: 2rem;
+    color: #fcf6f5;
 }
 
 .detail-box .detail-list {
@@ -97,13 +105,13 @@ body {
     font-size: 0.8rem;
 }
 
-.detail-box .detail-list .detail .btn_detail-close {
+/* .detail-box .detail-list .detail .btn_detail-close {
     position: absolute;
     right: -40px;
     top: 0px;
     font-size: 2rem;
     color: #fcf6f5;
-}
+} */
 
 .detail-box .detail-list .detail .detail-img {
     width: 100%;
@@ -111,6 +119,47 @@ body {
     background: url('../images/dummylogo3.jpg') no-repeat center center;
     background-size: cover;
     margin-top: 20px;
+}
+
+.detail-box .detail-list .detail .detail-feature {
+    
+}
+
+.detail-box .detail-list .detail .detail-feature .feature-des {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.detail-box .detail-list .detail .detail-feature .feature-list {
+
+}
+
+.detail-box .detail-list .detail .detail-feature .feature-list li {
+    padding: 4px 0;
+    font-size: 0.8rem;
+    color: #222;
+    font-weight: 400;
+}
+
+/* 디테일박스 내 이미지 삽입 구간 */
+
+.detail-box .mobile-detail-list .detail .detail-img1 {
+    background: url('../images/mockup/artbox_mockup.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.detail-box .mobile-detail-list .detail .detail-img2 {
+    background: url('../images/mockup/aqua_mockup.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.detail-box .mobile-detail-list .detail .detail-img3 {
+    background: url('../images/mockup/lg_mockup.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 
@@ -144,6 +193,7 @@ body {
     top: 0;
     z-index: 30;
     background: #fcf6f5;
+
     opacity: 0.9;
     border-bottom: 1px solid #990011;
 }
@@ -198,9 +248,9 @@ body {
     position: relative;
 }
 
-#header .header_inner .gnb li.on a::before {
+/* #header .header_inner .gnb li.on a::before {
     transform: scaleX(1);
-}
+} */
 
 #header .header_inner .gnb li a::before {
     content: '';
@@ -290,6 +340,11 @@ body {
 
 #main .about_wrap .about_inner .about .typing {
     font-weight: 600;
+    color: #FCF6F5;
+}
+
+#main .about_wrap .about_inner .about .typed-cursor {
+    color: #FCF6F5;
 }
 
 #main .about_wrap .about_inner .skill_wrap {
@@ -331,6 +386,7 @@ body {
 #main .about_wrap .about_inner .skill_wrap .skill .name {
     font-size: 1rem;
     line-height: 1rem;
+    color: #222;
 }
 
 
@@ -347,6 +403,7 @@ body {
 #main .about_wrap .about_inner .license_wrap {
     width: 50%;
     float: right;
+    text-align: right;
 }
 
 #main .about_wrap .about_inner .license_wrap h2 {
@@ -366,17 +423,22 @@ body {
 
 #main .about_wrap .about_inner .license_wrap .license-list li {
     padding: 5px 0;
+    color: #222;
 }
 
 #main .about_wrap .about_inner .license_wrap .license-list li .license-name {
     display: inline-block;
-    width: 150px;
-    font-size: 1rem;
+    width: 130px;
+    font-size: 0.9rem;
+    text-align: left;
 }
 
 
 #main .about_wrap .about_inner .license_wrap .license-list li .license-date {
     font-size: 0.8rem;
+    width: 50px;
+    display: inline-block;
+    text-align: left;
 }
 
 
@@ -452,7 +514,7 @@ body {
 
 #main .works_wrap .works_inner .works-box ul {
     overflow: hidden;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 #main .works_wrap .works_inner .works-box ul li {
@@ -460,6 +522,7 @@ body {
     width: calc(100% / 3);
     padding: 0 20px;
     box-sizing: border-box;
+    margin: 20px 0;
 }
 
 #main .works_wrap .works_inner .works-box ul li a {
@@ -481,7 +544,8 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    background:rgba(0, 0, 0, 0.8);
+    /* background:rgba(0, 0, 0, 0.9); */
+    background:#990011;
     box-sizing: border-box;
     z-index: 2;
     border-radius: 5px;
@@ -490,7 +554,7 @@ body {
 }
 
 #main .works_wrap .works_inner .works-box ul li:hover a .hover-mask {
-    opacity: 1;
+    opacity: .4;
 }
 
 #main .works_wrap .works_inner .works-box ul li a .img-box {
@@ -520,8 +584,8 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    height: 40px;
-    width: 140px;
+    height: 50px;
+    width: 160px;
     text-indent: -9999px;
     opacity: 0;
     transition: opacity 0.5s;
@@ -534,9 +598,7 @@ body {
 
 #main .works_wrap .works_inner .works-box ul li a .txt-box {
     padding: 10px;
-    height: 40px;
-    /* background: #990011; */
-    color: #000;
+    color: #222;
     transition: color 0.3s;
 }
 
@@ -546,7 +608,7 @@ body {
 
 #main .works_wrap .works_inner .works-box ul li a .txt-box .site-tit {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -573,6 +635,16 @@ body {
     background-size: cover;
 }
 
+#main .works_wrap .works_inner .works-box .responsive-list li a .thumbnail-box4 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .thumbnail-box5 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 
 /* 데스크탑 썸네일 */
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box1 {
@@ -590,20 +662,55 @@ body {
     background-size: cover;
 }
 
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box4 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box5 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box6 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box7 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box8 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box9 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box10 {
+    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 
 /* 모바일 썸네일 */
 #main .works_wrap .works_inner .works-box .mobile-list li a .thumbnail-box1 {
-    background: url('../images/dummylogo.jpg') no-repeat center center;
+    background: url('../images/mockup/artbox_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .thumbnail-box2 {
-    background: url('../images/dummylogo2.jpg') no-repeat center center;
+    background: url('../images/mockup/aqua_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .thumbnail-box3 {
-    background: url('../images/dummylogo3.jpg') no-repeat center center;
+    background: url('../images/mockup/lg_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -611,58 +718,102 @@ body {
 
 /* 반응형 로고 */
 #main .works_wrap .works_inner .works-box .responsive-list li a .logo-box1 {
-    background: url('../images/glovis_logo.png') no-repeat center center;
+    background: url('../images/logos/glovis_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .responsive-list li a .logo-box2 {
-    background: url('../images/hn_logo.png') no-repeat center center;
+    background: url('../images/logos/hn_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .responsive-list li a .logo-box3 {
-    background: url('../images/elite_logo.png') no-repeat center center;
+    background: url('../images/logos/elite_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .logo-box4 {
+    background: url('../images/logos/lafuma_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .responsive-list li a .logo-box5 {
+    background: url('../images/logo_red.png') no-repeat center center;
     background-size: contain;
 }
 
 
 /* 데스크탑 로고 */
 #main .works_wrap .works_inner .works-box .desktop-list li a .logo-box1 {
-    background: url('../images/posco_logo.png') no-repeat center center;
+    background: url('../images/logos/dl_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .logo-box2 {
-    background: url('../images/coffine_logo.png') no-repeat center center;
+    background: url('../images/logos/vitabrid-logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .logo-box3 {
-    background: url('../images/daelim_logo.png') no-repeat center center;
+    background: url('../images/logos/coffine_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box4 {
+    background: url('../images/logos/geoje_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box5 {
+    background: url('../images/logos/lotte_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box6 {
+    background: url('../images/logos/samyang_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box7 {
+    background: url('../images/logos/w_logo-dark.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box8 {
+    background: url('../images/logos/ikea-logo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box9 {
+    background: url('../images/logos/posco_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .desktop-list li a .logo-box10 {
+    background: url('../images/logos/samsung_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 
 /* 모바일 로고 */
 #main .works_wrap .works_inner .works-box .mobile-list li a .logo-box1 {
-    background: url('../images/artbox_logo.png') no-repeat center center;
+    background: url('../images/logos/artbox_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .logo-box2 {
-    background: url('../images/aquarium_logo.png') no-repeat center center;
+    background: url('../images/logos/aquarium_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .logo-box3 {
-    background: url('../images/lg_logo.png') no-repeat center center;
+    background: url('../images/logos/lg_logo.png') no-repeat center center;
     background-size: contain;
 }
 
 
 #main .contact_wrap {
     width: 100%;
-    height: 800px;
 }
 
 #main .contact_wrap .contact_inner {
@@ -670,6 +821,7 @@ body {
     margin: 0 auto;
     padding: 50px 0;
     box-sizing: border-box;
+    text-align: right;
 }
 
 #main .contact_wrap .contact_inner h2 {
@@ -689,12 +841,19 @@ body {
     font-size: 0.8rem;
 }
 
-#main .contact_wrap .contact_inner p span {
+#main .contact_wrap .contact_inner p .icon {
     display: inline-block;
     width: 20px;
     text-align: center;
     margin-right: 5px;
     color: #990011;
+}
+
+#main .contact_wrap .contact_inner p .txt {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    color: #222;
 }
 
 
