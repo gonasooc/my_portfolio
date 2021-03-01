@@ -96,7 +96,7 @@ $(function(){
 
 
     var typed = new Typed('.typing', {
-        strings: ["@gonasooc", "a creative man.", "a man for your team.", "a wordsmith.", "pixel perfect."],
+        strings: ["@gonasooc", "a creative man.", "a man for your team.", "a wordsmith."],
         typeSpeed: 60,
         loop: true
       });

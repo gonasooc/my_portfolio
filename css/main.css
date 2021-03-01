@@ -892,7 +892,6 @@ body {
     margin: 0 auto;
     padding: 50px 20px;
     box-sizing: border-box;
-    text-align: right;
 }
 
 #main .contact_wrap .contact_inner h2 {
@@ -959,5 +958,30 @@ body {
 
 
 
+/* 모바일 (임시) ------------------------------------------------------ */
+@media (max-width: 768px) {
 
+    #main .about_wrap .about_inner .skill_wrap {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    #main .about_wrap .about_inner .license_wrap {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    #main .works_wrap .works_inner .works-box ul li {
+        float: none;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin: 20px 0;
+    }
+
+}
 
