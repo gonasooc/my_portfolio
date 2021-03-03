@@ -34,7 +34,7 @@ body {
 
 .detail-box {
     width: 600px;
-    height: 700px;
+    height: 750px;
     position: relative;
     box-sizing: border-box;
     position: fixed;
@@ -125,7 +125,8 @@ body {
 }
 
 .detail-box .detail-list .detail .detail-feature .feature-list {
-
+    list-style: disc;
+    list-style-position: inside;
 }
 
 .detail-box .detail-list .detail .detail-feature .feature-list li {
@@ -542,7 +543,7 @@ body {
     font-size: 1.1rem;
     text-align: left;
     vertical-align: middle;
-
+    font-weight: 600;
 }
 
 
@@ -559,10 +560,12 @@ body {
     display: inline-block;
     width: 100px;
     height: 20px;
+    padding-top: 5px;
     vertical-align: middle;
+    font-size: 1rem;
 }
 
-#main .about_wrap .about_inner .license_wrap .license .license-list li .license-issue1 {
+/* #main .about_wrap .about_inner .license_wrap .license .license-list li .license-issue1 {
     background: url('../images/logos/kpc_logo.png') no-repeat left center;
     background-size: contain;
 }
@@ -575,7 +578,7 @@ body {
 #main .about_wrap .about_inner .license_wrap .license .license-list li .license-issue3 {
     background: url('../images/logos/hrdlogo.png') no-repeat left center;
     background-size: contain;
-}
+} */
 
 
 

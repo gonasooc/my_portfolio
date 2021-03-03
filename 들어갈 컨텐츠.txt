@@ -1,0 +1,192 @@
+글로비스
+
+- bind()를 활용한 메인 영상 연속 재생
+- modal을 활용한 클릭 이벤트 구현
+- 전체 pull-down 메뉴 구현
+- 스크롤 시 섹션에 offset()을 활용한 상호 작용 animation 구현
+- Swiper를 활용한 visual slide 및 news slide 구성
+- 각각의 반응형에 맞게 attr()을 활용한 이미지 변경 상호 작용
+- 아코디언 모바일 메뉴 구성
+- media query를 활용한 반응형 구현
+
+
+
+호텔농심
+
+
+- pull-down 메뉴 구현
+- Swiper를 활용하여 main visual slide 구성(API 활용하여 정지 버튼 구현)
+- 스크롤 시 사용자 편의를 고려한 header 메뉴 조작
+- Swiper를 CSS로 customizing하여 각각의 섹션 구성
+- media query를 활용한 반응형 구현
+
+
+
+
+
+엘리트
+- slick를 활용한 main visual slide 구성
+- 각각의 반응형에 맞게 attr()과 replace()를 활용한 이미지 변경
+- 상호 작용이 가능한 2단 select box 구현
+- media query를 활용한 반응형 구현
+
+
+
+라푸마
+- slick를 활용한 main visual slide 구성
+- 다양한 hover 상호 작용
+- attr()과 replace()를 활용한 이미지 변경 상호 작용
+- 각각의 반응형에 맞게 attr()과 html()을 활용한 컨텐츠 변경
+- media query를 활용한 반응형 구현
+
+
+
+포폴
+- jquery library를 활용한 typing animation 및 line progress bar 구현
+- index()를 활용한 tab menu, modal 구현
+- offset()을 활용한 각 메뉴별 이동 구현
+- media query를 활용한 반응형 구현
+
+
+
+
+대림
+- 전체 pull-down 메뉴 구현
+- 하루 동안 열지 않는 배너 기능 구현(24시간 cookie check)
+- slick를 활용한 main visual slide 구성
+- 다양한 slick API를 활용한 slide 내 상호 작용 구현
+- index()와 attr()을 활용한 slide 내 modal 구현
+
+
+
+비타브리드
+- pull-down 메뉴를 통한 각각의 3단 메뉴 구성
+- 하루 동안 열지 않는 배너 기능 구현(24시간 cookie check)
+- CSS 활용을 통한 다양한 hover 상호 작용 구현
+- slick를 활용한 main visual slide 구성
+- Swiper를 활용한 섹션 내 slide 구현
+
+
+
+커핀그루나루
+- bxSlider를 활용한 main visual slide 및 섹션 내 slide 구성
+- 두 개의 main을 slide 형식으로 구현(각각의 fixed 버튼을 통해 해당 main으로 이동)
+- 전체 pull-down 메뉴 구현
+- replace()를 활용하여 hover 상호 작용 구현(background-image 변경)
+
+
+
+
+거제
+- slick를 활용한 main visual slide, 섹션 내 banner slide 구성
+- CSS 활용을 통한 다양한 hover 상호 작용 구현
+
+
+
+
+민속박물관
+- 전체 pull-down 메뉴 구현
+- Swiper를 활용한 main visual slide 구성(API 활용하여 정지 버튼 구현)
+- 스크롤 시 사용자 편의를 고려한 header 메뉴 변경 적용
+- index()와 eq()를 활용한 상호 작용 구현
+- 하루 동안 열지 않는 배너 기능 구현(24시간 cookie check)
+
+
+
+
+
+삼양식품
+- 전체 pull-down 메뉴 구현
+- slick를 활용한 main visual slide 및 섹션 내 slide 구성
+- bxSlider 및 eq()를 활용한 섹션 내 탭 메뉴 구성
+- 사용자 편의를 고려해 스크롤에 따라 고정되는 퀵 메뉴 구성
+- modal 안에 attr()을 활용한 영상 pop-up
+
+
+
+
+w컨셉
+- slick를 활용한 main visual slide 구성
+- index()와 eq()를 활용한 섹션 내 탭 메뉴 구성
+- 하루 동안 열지 않는 배너 기능 구현(24시간 cookie check)
+
+
+
+
+이케아
+- 사용자 편의를 고려한 사이드 메뉴 구성
+- CSS를 활용한 다양한 hover 상호 작용
+
+
+
+
+포스코
+- mousewheel.js를 활용한 상호 작용
+- Swiper를 활용한 원페이지 스크롤 구성
+- slideNext() 외 Swiper API를 활용한 상호 작용 구현
+- 배열과 index(), eq()를 활용한 순차적인 상호 작용 modal 구현
+- slick를 활용한 섹션 내 slide 구현
+
+
+
+
+삼성뉴스룸
+- Swiper를 활용한 main visual slide 구성(API 활용하여 정지 버튼 구현)
+- 2단 메뉴 구성
+- CSS를 활용한 다양한 상호 작용 구현
+
+
+
+
+레스포색
+- CSS를 활용한 다양한 상호 작용 구현
+- 2단 메뉴 구성
+
+
+
+포도팟
+- 스크롤을 통한 다양한 상호 작용
+- 해당 섹션 도달 시 animation 실행을 통한 동적인 이미지 구현
+- 스크롤을 통한 페이지 버튼 구현 (버튼 클릭 시 해당 섹션으로 이동)
+- 클릭 이벤트 내 index()를 활용한 상호 작용 구현(클릭 시 이미지 변경 적용)
+
+
+
+
+
+아트박스
+- Swiper를 통한 main visual slide 및 섹션 내 slide 구현
+- 다양한 이미지를 활용한 메뉴 구현
+- 다양한 해상도를 고려한 mark-up과 stylesheet 적용
+
+
+
+아쿠아리움
+- slick를 활용한 섹션 내 slide 구현
+- 스크롤 시 사용자 편의를 고려한 header 메뉴 조작
+- 사용자 편의를 고려한 하단 퀵 메뉴 구현(클릭 시 상호 작용)
+- 아코디언 모바일 메뉴 구성
+
+
+
+
+
+LG헬로비전
+- 사용자 편의를 고려한 우측 하단 퀵 메뉴 구현(스크롤 시 상호 작용)
+- 고정된 이벤트 배너에 animation 구현으로 동적인 이미지 구축
+- Swiper를 활용한 main visual slide 구성(API 활용하여 정지 버튼 구현)
+- Swiper를 활용한 섹션 내 slide 구현
+- index()와 eq()를 활용한 모바일 메뉴를 탭 메뉴로 구현
+- 통일성을 가져가되 섹션 내 다양한 레이아웃 구성
+
+
+
+서브웨이
+- Swiper를 활용한 main visual slide 구현
+- Swiper를 활용하여 각각의 slide가 들어간 탭 메뉴 구현(index()와 eq() 사용)
+- 아코디언 모바일 메뉴 구성
+
+
+
+
+<link rel="shortcut icon" type="x-icon/image" href="./images/favicon.ico">

@@ -1,7 +1,4 @@
 $(function(){
-
-    // $('a').attr('href', 'javascript:;');
-
     $('.btn_top_wrap').click(function(){
         $('body, html').animate({'scrollTop':0}, 500)
     });
@@ -19,7 +16,6 @@ $(function(){
     })
 
 
-    // var swForClose = true;
     $('.responsive-list > li').click(function(){
         const IndexNum = $(this).index();
         console.log(IndexNum);
@@ -27,8 +23,6 @@ $(function(){
         $('.cover').fadeIn();
         $('.responsive-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
-        // swForClose = false;
-        // console.log(swForClose);
     });
 
     $('.desktop-list > li').click(function(){
@@ -38,9 +32,6 @@ $(function(){
         $('.cover').fadeIn();
         $('.desktop-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
-        // swForClose = false;
-        // console.log(swForClose);
-
     });
 
     $('.mobile-list > li').click(function(){
@@ -50,37 +41,15 @@ $(function(){
         $('.cover').fadeIn();
         $('.mobile-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
-        // swForClose = false;
-        // console.log(swForClose);
-
     });
 
-    $('.btn_detail-close').click(function(){
+    $('.btn_detail-close, .cover').click(function(){
         $('.cover').fadeOut();
         $('.detail-box').fadeOut();
         $('.detail').hide();
         $('body, html').css({'overflow':'auto'});
-        // swForClose = true;
-        // console.log(swForClose);
-
     });
     
-    // if(swForClose == false){
-    //     $('body, html').click(function(e){
-    //         if(!$(e.target).hasClass('.detail-box')){
-    //             $('.cover').fadeOut();
-    //             $('.detail-box').fadeOut();
-    //             $('.detail').hide();
-    //             $('body, html').css({'overflow':'auto'});
-    //             swForClose = true;
-    //             console.log(swForClose);
-    //         }
-    //     });
-    // }
-
-    // 모달에서 바깥쪽 클릭했을 때 사라지게 하는 기능 구현 필요
-
-
 
     $(window).scroll(function(){
         const windowScrollValue = $(this).scrollTop();
@@ -90,8 +59,7 @@ $(function(){
         } else {
             $('#header, .btn_top_wrap').removeClass('on');
         }
-    })
-
+    });
 
 
     var typed = new Typed('.typing', {
