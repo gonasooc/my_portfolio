@@ -9,11 +9,11 @@ $(function(){
         $('.works-box ul').hide();
         $('.works-box ul').eq(tabIndexNum).show();
         $(this).addClass('on').siblings().removeClass('on');
-    })
+    });
 
     $('.btn_all').click(function(){
         $('.works-box ul').show();
-    })
+    });
 
 
     $('.responsive-list > li').click(function(){
@@ -102,6 +102,11 @@ $(function(){
     $('.ai-bar').LineProgressbar({
         percentage: 70,
         fillBackgroundColor: '#ff7c00',
+        radius: '2px'
+    });
+    $('.oa-bar').LineProgressbar({
+        percentage: 90,
+        fillBackgroundColor: '#e43b01',
         radius: '2px'
     });
 
