@@ -53,7 +53,13 @@ body {
     top: 0px;
     font-size: 2rem;
     color: #fcf6f5;
+    transition: all .5s;
 }
+
+.detail-box .btn_detail-close:hover {
+    transform: rotate(180deg);
+}
+
 
 .detail-box .detail-list {
     position: absolute;
@@ -95,6 +101,15 @@ body {
 
 .detail-box .detail-list .detail .detail-link li {
     display: inline-block;
+}
+
+.detail-box .detail-list .detail .detail-link .detail-category {
+    padding: 5px 10px;
+    background: #fcf6f5;
+    color: #990011;
+    font-size: 0.8rem;
+    border: 1px solid #990011;
+    font-weight: 500;
 }
 
 .detail-box .detail-list .detail .detail-link li a {
@@ -379,6 +394,7 @@ body {
     font-size: 1.5rem;
 }
 
+
 /* #header .header_inner .btn_hamburger {
     display: block;
     width: 30px;
@@ -482,8 +498,30 @@ body {
     color: #222;
 }
 
-#main .about_wrap .about_inner .skill_wrap .etc .name {
-    font-size: 0.8rem;
+#main .about_wrap .about_inner .skill_wrap .plus {
+    padding: 5px 0;
+}
+
+#main .about_wrap .about_inner .skill_wrap .plus .icon {
+    width: 16px;
+    height: 16px;
+}
+
+#main .about_wrap .about_inner .skill_wrap .plus .name {
+    font-size: 0.9rem;
+}
+
+#main .about_wrap .about_inner .skill_wrap .studying {
+    padding: 5px 0;
+}
+
+#main .about_wrap .about_inner .skill_wrap .studying .icon {
+    width: 16px;
+    height: 16px;
+}
+
+#main .about_wrap .about_inner .skill_wrap .studying .name {
+    font-size: 0.9rem;
 }
 
 
@@ -1124,7 +1162,7 @@ body {
     width: 100px;
     height: 65px;
     position: absolute;
-    right: 50px;
+    right: 20%;
     top: 50%;
     transform: translateY(-50%);
     padding: 0 10px;
