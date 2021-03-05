@@ -379,7 +379,7 @@ body {
     font-size: 1.5rem;
 }
 
-#header .header_inner .btn_hamburger {
+/* #header .header_inner .btn_hamburger {
     display: block;
     width: 30px;
     height: 28px;
@@ -404,9 +404,7 @@ body {
 
 #header .header_inner .btn_hamburger .bottom-line {
     margin-bottom: none;
-}
-
-
+} */
 
 
 #main {
@@ -484,6 +482,10 @@ body {
     color: #222;
 }
 
+#main .about_wrap .about_inner .skill_wrap .etc .name {
+    font-size: 0.8rem;
+}
+
 
 #main .about_wrap .about_inner .skill_wrap .skill .progressbar {
     box-shadow: none;
@@ -513,8 +515,8 @@ body {
 } */
 
 #main .about_wrap .about_inner .right_wrap .license {
-    max-width: 250px;
-    min-height: 250px;
+    width: 250px;
+    height: 250px;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     padding: 20px 20px;
     box-sizing: border-box;
@@ -526,7 +528,7 @@ body {
     transition: all 0.5s;
     background: #fff;
     font-family: 'Nanum Pen Script';
-    margin-left: 30px;
+    margin-left: 2.5rem;
 
 }
 
@@ -582,8 +584,8 @@ body {
 }
 
 #main .about_wrap .about_inner .right_wrap .memo .memo1 {
-    max-width: 250px;
-    min-height: 250px;
+    width: 250px;
+    height: 250px;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     padding: 20px 20px;
     box-sizing: border-box;
@@ -595,7 +597,7 @@ body {
     transition: all 0.5s;
     background: #fff;
     font-family: 'Nanum Pen Script';
-    margin-right: 30px;
+    margin-right: 2.5rem;
 }
 
 #main .about_wrap .about_inner .right_wrap .memo .memo1:hover {
@@ -610,7 +612,6 @@ body {
     line-height: 20px;
     font-size: 1.2rem;
     font-weight: 500;
-    text-align: justify;
 }
 
 
@@ -1060,10 +1061,11 @@ body {
 
 
 #main .works_wrap .works_inner .alert {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     color: #ccc;
     padding: 20px;
     font-weight: 400;
+    line-height: 1rem;
 }
 
 
@@ -1201,6 +1203,15 @@ body {
 
 #footer .footer_inner .comment {
     line-height: 1.2rem;
+    margin-bottom: .2rem;
+}
+
+#footer .footer_inner .valid {
+    text-align: center;
+}
+
+#footer .footer_inner .valid p {
+    display: inline-block;
 }
 
 
@@ -1298,6 +1309,18 @@ body {
         width: 100%;
         height: 150px;
         margin-top: 20px;
+    }
+
+    .detail-box .btn_detail-close {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        right: auto;
+        bottom: 5px;
+        font-size: 1.5rem;
+        color: #990011;
+        z-index: 3;
     }
 
 }
