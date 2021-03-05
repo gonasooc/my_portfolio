@@ -1,20 +1,26 @@
 $(function(){
-
-    $('body, html').easeScroll({
-
-
-    });
-
     $('.btn_top_wrap').click(function(){
         $('body, html').animate({'scrollTop':0}, 500)
     });
 
     $('.tab-list li').click(function(){
         const tabIndexNum = $(this).index()-1;
-        console.log(tabIndexNum);
+        // console.log(tabIndexNum);
         $('.works-box ul').hide();
         $('.works-box ul').eq(tabIndexNum).show();
         $(this).addClass('on').siblings().removeClass('on');
+    });
+
+    $('#m_tab-list').change(function(){
+        // const mTabIndexNum = $(this).index()-1;
+        const mTabIndexNum = $(this).prop('selectedIndex')-1;
+        // select로 index를 담는 방식
+        console.log(mTabIndexNum);
+        $('.works-box ul').hide();
+        $('.works-box ul').eq(mTabIndexNum).show();
+        if(mTabIndexNum === -1){
+            $('.works-box ul').show();
+        }
     });
 
     $('.btn_all').click(function(){
@@ -24,7 +30,7 @@ $(function(){
 
     $('.responsive-list > li').click(function(){
         const IndexNum = $(this).index();
-        console.log(IndexNum);
+        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.responsive-detail-list .detail').eq(IndexNum).fadeIn();
@@ -33,7 +39,7 @@ $(function(){
 
     $('.desktop-list > li').click(function(){
         const IndexNum = $(this).index();
-        console.log(IndexNum);
+        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.desktop-detail-list .detail').eq(IndexNum).fadeIn();
@@ -42,10 +48,19 @@ $(function(){
 
     $('.mobile-list > li').click(function(){
         const IndexNum = $(this).index();
-        console.log(IndexNum);
+        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.mobile-detail-list .detail').eq(IndexNum).fadeIn();
+        $('body, html').css({'overflow':'hidden'});
+    });
+
+    $('.etc-list > li').click(function(){
+        const IndexNum = $(this).index();
+        // console.log(IndexNum);
+        $('.detail-box').fadeIn();
+        $('.cover').fadeIn();
+        $('.etc-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
     });
 
@@ -59,7 +74,7 @@ $(function(){
 
     $(window).scroll(function(){
         const windowScrollValue = $(this).scrollTop();
-        console.log(windowScrollValue);
+        // console.log(windowScrollValue);
         if(windowScrollValue >= 80){
             $('#header, .btn_top_wrap').addClass('on');
         } else {
@@ -78,42 +93,57 @@ $(function(){
     $('.html-bar').LineProgressbar({
         percentage: 90,
         fillBackgroundColor: '#e44d26',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
     $('.css-bar').LineProgressbar({
         percentage: 80,
         fillBackgroundColor: '#264de4',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
+
     });
     $('.js-bar').LineProgressbar({
-        percentage: 60,
+        percentage: 50,
         fillBackgroundColor: '#f7df1e',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
+    });
+    $('.vue-bar').LineProgressbar({
+        percentage: 20,
+        fillBackgroundColor: '#41b883',
+        radius: '2px',
+        height: '3px'
     });
     $('.jq-bar').LineProgressbar({
-        percentage: 80,
+        percentage: 60,
         fillBackgroundColor: '#116baf',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
     $('.b-bar').LineProgressbar({
         percentage: 70,
         fillBackgroundColor: '#563d7c',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
     $('.ps-bar').LineProgressbar({
         percentage: 90,
         fillBackgroundColor: '#00c8ff',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
     $('.ai-bar').LineProgressbar({
         percentage: 70,
         fillBackgroundColor: '#ff7c00',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
     $('.oa-bar').LineProgressbar({
         percentage: 90,
         fillBackgroundColor: '#e43b01',
-        radius: '2px'
+        radius: '2px',
+        height: '3px'
     });
 
     const aboutNum = $('.about_wrap').offset().top - 80;
