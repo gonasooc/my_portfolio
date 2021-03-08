@@ -139,12 +139,12 @@ $(function(){
         radius: '2px',
         height: '3px'
     });
-    $('.oa-bar').LineProgressbar({
-        percentage: 90,
-        fillBackgroundColor: '#e43b01',
-        radius: '2px',
-        height: '3px'
-    });
+    // $('.oa-bar').LineProgressbar({
+    //     percentage: 90,
+    //     fillBackgroundColor: '#e43b01',
+    //     radius: '2px',
+    //     height: '3px'
+    // });
 
     const aboutNum = $('.about_wrap').offset().top - 80;
     const worksNum = $('.works_wrap').offset().top - 160;
@@ -205,6 +205,4 @@ $(function(){
 //       ScrollTrigger.create(config);
 //     });
 //   }
-
-
 

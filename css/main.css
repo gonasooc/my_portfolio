@@ -1,5 +1,12 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'SDMiSaeng';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 ::selection {
     background: #990011;
@@ -7,8 +14,8 @@
 }
 
 body {
-    font-family: 'Nanum Pen Script', cursive;
     font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -90,7 +97,6 @@ body {
     padding: 5px 10px;
     box-sizing: border-box;
     color: #fcf6f5;
-    font-weight: 500;
 }
 
 .detail-box .detail-list .detail .detail-link {
@@ -109,7 +115,6 @@ body {
     color: #990011;
     font-size: 0.8rem;
     border: 1px solid #990011;
-    font-weight: 500;
 }
 
 .detail-box .detail-list .detail .detail-link li a {
@@ -149,7 +154,6 @@ body {
     padding: 4px 0;
     font-size: 0.9rem;
     color: #222;
-    font-weight: 400;
     line-height: 1.2rem;
 }
 
@@ -278,15 +282,19 @@ body {
     transition: all 0.5s;
 }
 
+.btn_top_wrap:hover {
+    transform: translateY(-3px);
+}
+
 .btn_top_wrap.on {
     right: 20px;
 }
 
 .btn_top_wrap .btn_top {
-    font-size: 2rem;
-    color: #990011;
-    background: #fff;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: url('../images/round-top-arrow.png') no-repeat center center;
+    background-size: cover;
     display: block;
 }
 
@@ -347,7 +355,7 @@ body {
 
 #header .header_inner .gnb li {
     float: left;
-    padding: 0 10px;
+    padding: 3px 10px;
 }
 
 #header .header_inner .gnb li a {
@@ -392,6 +400,11 @@ body {
 
 #header .header_inner .gnb .github a {
     font-size: 1.5rem;
+    transition: transform .5s;
+}
+
+#header .header_inner .gnb .github a:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -448,7 +461,7 @@ body {
 }
 
 #main .about_wrap .about_inner .about .typing {
-    font-weight: 600;
+    font-weight: 700;
     color: #FCF6F5;
 }
 
@@ -565,7 +578,7 @@ body {
     -moz-transform: rotate(-6deg) rotateX(0deg); /* Firefox */
     transition: all 0.5s;
     background: #fff;
-    font-family: 'Nanum Pen Script';
+    font-family: 'SDMiSaeng';
     margin-left: 2.5rem;
 
 }
@@ -592,15 +605,15 @@ body {
 #main .about_wrap .about_inner .right_wrap .license .license-list li .license-name {
     display: inline-block;
     width: 130px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: left;
     vertical-align: middle;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
 #main .about_wrap .about_inner .right_wrap .license .license-list li .license-date {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 50px;
     display: inline-block;
     text-align: left;
@@ -614,7 +627,7 @@ body {
     height: 20px;
     padding-top: 5px;
     vertical-align: middle;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #main .about_wrap .about_inner .right_wrap .memo {
@@ -634,7 +647,7 @@ body {
     -moz-transform: rotate(6deg) rotateX(0deg); /* Firefox */
     transition: all 0.5s;
     background: #fff;
-    font-family: 'Nanum Pen Script';
+    font-family: 'SDMiSaeng';
     margin-right: 2.5rem;
 }
 
@@ -648,8 +661,7 @@ body {
 #main .about_wrap .about_inner .right_wrap .memo .memo1 p {
     padding: 10px;
     line-height: 20px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 
@@ -696,7 +708,7 @@ body {
     font-style: italic;
     color: #fcf6f5;
     background: #990011;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #main .works_wrap .works_inner .tab-box {
@@ -851,7 +863,6 @@ body {
 
 #main .works_wrap .works_inner .works-box ul li a .txt-box .site-tit {
     font-size: 1rem;
-    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -1126,7 +1137,7 @@ body {
     font-style: italic;
     color: #fcf6f5;
     background: #990011;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #main .contact_wrap .contact_inner .img-box {
@@ -1291,7 +1302,7 @@ body {
     }
 
     #main .works_wrap .works_inner .m_tab-box #m_tab-list {
-        width: calc(100% - 40px);
+        width: 100%;
         height: 2.5rem;
         border: 2px solid #990011;
         font-size: 1.1rem;
@@ -1315,7 +1326,7 @@ body {
     #main .works_wrap .works_inner .works-box ul li {
         float: none;
         width: 100%;
-        padding: 0 20px;
+        padding: 0;
         box-sizing: border-box;
         margin: 20px 0;
     }
@@ -1359,6 +1370,10 @@ body {
         font-size: 1.5rem;
         color: #990011;
         z-index: 3;
+    }
+
+    .detail-box .btn_detail-close:hover {
+        transform: translateX(-50%) rotate(0);
     }
 
 }
