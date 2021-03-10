@@ -186,7 +186,7 @@ body {
 /* 디테일박스 내 이미지 삽입 구간 */
 
 .detail-box .responsive-detail-list .detail .detail-img1 {
-    background: url('../images/mockup/glovis_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/glovis_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .detail-box .responsive-detail-list .detail .detail-img3 {
-    background: url('../images/mockup/elite-Mockup.png') no-repeat center center;
+    background: url('../images/mockup/elite-mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -212,17 +212,17 @@ body {
 
 
 .detail-box .desktop-detail-list .detail .detail-img1 {
-    background: url('../images/mockup/dl_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/dl_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img2 {
-    background: url('../images/mockup/vitabrid_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/vitabrid_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img3 {
-    background: url('../images/mockup/coffine_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/coffine_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -232,12 +232,12 @@ body {
 }
 
 .detail-box .desktop-detail-list .detail .detail-img5 {
-    background: url('../images/mockup/lotte_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/lotte_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img6 {
-    background: url('../images/mockup/samyang_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/samyang_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -247,27 +247,27 @@ body {
 }
 
 .detail-box .desktop-detail-list .detail .detail-img8 {
-    background: url('../images/mockup/ikea_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/ikea_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img9 {
-    background: url('../images/mockup/posco_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/posco_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img10 {
-    background: url('../images/mockup/samsung_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/samsung_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img11 {
-    background: url('../images/mockup/lesportsac_Mockup.jpg') no-repeat center center;
+    background: url('../images/mockup/lesportsac_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .detail-box .desktop-detail-list .detail .detail-img12 {
-    background: url('../images/mockup/podo_Mockup.jpg') no-repeat center center;
+    background: url('../images/mockup/podo_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -292,6 +292,11 @@ body {
     background-size: cover;
 }
 
+.detail-box .mobile-detail-list .detail .detail-img5 {
+    background: url('../images/mockup/amc_mockup.png') no-repeat center center;
+    background-size: cover;
+}
+
 
 .detail-box .etc-detail-list .detail .detail-img1 {
     background: url('../images/youtube_output.png') no-repeat center center;
@@ -305,7 +310,7 @@ body {
     right: -100%;
     bottom: 20px;
     z-index: 10;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .btn_top_wrap:hover {
@@ -869,11 +874,13 @@ body {
     width: 160px;
     text-indent: -9999px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 0.5s;
+    margin-top: 1rem;
 }
 
 #main .works_wrap .works_inner .works-box ul li:hover .logo-box {
     opacity: 1;
+    margin-top: 0;
 }
 
 
@@ -901,7 +908,7 @@ body {
 
 /* 반응형 썸네일 */
 #main .works_wrap .works_inner .works-box .responsive-list li a .thumbnail-box1 {
-    background: url('../images/mockup/glovis_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/glovis_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -911,7 +918,7 @@ body {
 }
 
 #main .works_wrap .works_inner .works-box .responsive-list li a .thumbnail-box3 {
-    background: url('../images/mockup/elite-Mockup.png') no-repeat center center;
+    background: url('../images/mockup/elite-mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -927,17 +934,17 @@ body {
 
 /* 데스크탑 썸네일 */
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box1 {
-    background: url('../images/mockup/dl_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/dl_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box2 {
-    background: url('../images/mockup/vitabrid_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/vitabrid_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box3 {
-    background: url('../images/mockup/coffine_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/coffine_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -947,12 +954,12 @@ body {
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box5 {
-    background: url('../images/mockup/lotte_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/lotte_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box6 {
-    background: url('../images/mockup/samyang_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/samyang_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -962,27 +969,27 @@ body {
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box8 {
-    background: url('../images/mockup/ikea_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/ikea_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box9 {
-    background: url('../images/mockup/posco_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/posco_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box10 {
-    background: url('../images/mockup/samsung_Mockup.png') no-repeat center center;
+    background: url('../images/mockup/samsung_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box11 {
-    background: url('../images/mockup/lesportsac_Mockup.jpg') no-repeat center center;
+    background: url('../images/mockup/lesportsac_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
 #main .works_wrap .works_inner .works-box .desktop-list li a .thumbnail-box12 {
-    background: url('../images/mockup/podo_Mockup.jpg') no-repeat center center;
+    background: url('../images/mockup/podo_mockup.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1003,7 +1010,12 @@ body {
 }
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .thumbnail-box4 {
-    background: url('../images/mockup/subway_Mockup.jpg') no-repeat center center;
+    background: url('../images/mockup/subway_mockup.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .thumbnail-box5 {
+    background: url('../images/mockup/amc_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -1122,6 +1134,11 @@ body {
 
 #main .works_wrap .works_inner .works-box .mobile-list li a .logo-box4 {
     background: url('../images/logos/subway_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .mobile-list li a .logo-box5 {
+    background: url('../images/logos/amc_logo.png') no-repeat center center;
     background-size: contain;
 }
 
