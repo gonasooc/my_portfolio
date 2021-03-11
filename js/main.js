@@ -160,6 +160,18 @@ $(function(){
         $('body, html').animate({'scrollTop':contactNum});
         console.log(contactNum);
     });
+
+    $('.etc-detail-list .detail-img1').click(function(){
+        $(this).addClass('on');    
+        $(this).mousemove(function(event){
+            var bgX = event.pageX / 10 * 2,
+            bgY = event.pageY / 100;
+            $('.etc-detail-list .detail-img1.on').css({"background-position": `${bgX}% ${bgY}%`})
+        });
+    });
+    $('.etc-detail-list .detail-img1').mouseleave(function(){
+        $(this).removeClass('on').css({"background-position":"center center"});
+    });
     
 })
 
