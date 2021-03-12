@@ -1,21 +1,21 @@
 $(function(){
+
+    $('.skill, .license, .memo1').addClass('on');
+
     $('.btn_top_wrap').click(function(){
         $('body, html').animate({'scrollTop':0}, 500)
     });
 
     $('.tab-list li').click(function(){
         const tabIndexNum = $(this).index()-1;
-        // console.log(tabIndexNum);
         $('.works-box ul').hide();
         $('.works-box ul').eq(tabIndexNum).show();
         $(this).addClass('on').siblings().removeClass('on');
     });
 
     $('#m_tab-list').change(function(){
-        // const mTabIndexNum = $(this).index()-1;
         const mTabIndexNum = $(this).prop('selectedIndex')-1;
         // select로 index를 담는 방식
-        console.log(mTabIndexNum);
         $('.works-box ul').hide();
         $('.works-box ul').eq(mTabIndexNum).show();
         if(mTabIndexNum === -1){
@@ -27,10 +27,8 @@ $(function(){
         $('.works-box ul').show();
     });
 
-
     $('.responsive-list > li').click(function(){
         const IndexNum = $(this).index();
-        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.responsive-detail-list .detail').eq(IndexNum).fadeIn();
@@ -39,7 +37,6 @@ $(function(){
 
     $('.desktop-list > li').click(function(){
         const IndexNum = $(this).index();
-        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.desktop-detail-list .detail').eq(IndexNum).fadeIn();
@@ -48,7 +45,6 @@ $(function(){
 
     $('.mobile-list > li').click(function(){
         const IndexNum = $(this).index();
-        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.mobile-detail-list .detail').eq(IndexNum).fadeIn();
@@ -57,7 +53,6 @@ $(function(){
 
     $('.etc-list > li').click(function(){
         const IndexNum = $(this).index();
-        // console.log(IndexNum);
         $('.detail-box').fadeIn();
         $('.cover').fadeIn();
         $('.etc-detail-list .detail').eq(IndexNum).fadeIn();
@@ -74,11 +69,24 @@ $(function(){
 
     $(window).scroll(function(){
         const windowScrollValue = $(this).scrollTop();
-        // console.log(windowScrollValue);
+        const contactNum = $('.contact_wrap').offset().top - 700;
+        const workNum = $('.works_wrap').offset().top - 500;
         if(windowScrollValue >= 80){
             $('#header, .btn_top_wrap').addClass('on');
         } else {
             $('#header, .btn_top_wrap').removeClass('on');
+        }
+
+        if(windowScrollValue > contactNum){
+            $('.biz-card').addClass('on');
+        } else {
+            $('.biz-card').removeClass('on');
+        }
+
+        if(windowScrollValue > workNum){
+            $('.works-box > ul > li').addClass('on');
+        } else {
+            $('.works-box > ul > li').removeClass('on');
         }
     });
 
@@ -149,7 +157,6 @@ $(function(){
     const aboutNum = $('.about_wrap').offset().top - 80;
     const worksNum = $('.works_wrap').offset().top - 160;
     const contactNum = $('.contact_wrap').offset().top - 160;
-    // console.log(contactNum);
     $('.about').click(function(){
         $('body, html').animate({'scrollTop':aboutNum});
     });
@@ -158,14 +165,22 @@ $(function(){
     });
     $('.contact').click(function(){
         $('body, html').animate({'scrollTop':contactNum});
-        console.log(contactNum);
     });
 
+    $('.detail-cover').mouseenter(function(){
+        $(this).addClass('on');
+    });
+    $('.detail-cover').mouseleave(function(){
+        $(this).removeClass('on');
+    });
+
+
     $('.etc-detail-list .detail-img1').click(function(){
-        $(this).addClass('on');    
+        $(this).addClass('on');
+        $('.detail-cover').removeClass('on');    
         $(this).mousemove(function(event){
             var bgX = event.pageX / 10 * 2,
-            bgY = event.pageY / 100;
+            bgY = event.pageY;
             $('.etc-detail-list .detail-img1.on').css({"background-position": `${bgX}% ${bgY}%`})
         });
     });

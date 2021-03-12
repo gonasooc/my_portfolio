@@ -140,11 +140,6 @@ body {
     overflow: hidden;
 }
 
-
-/* .detail-box .detail-list .detail .detail-img:hover .detail-cover {
-    opacity: 0.7;
-}
-
 .detail-box .detail-list .detail .detail-img .detail-cover {
     position: absolute;
     left: 0;
@@ -156,6 +151,10 @@ body {
     transition: opacity .5s;
 }
 
+.detail-box .detail-list .detail .detail-img .detail-cover.on {
+    opacity: 0.7;
+}
+
 .detail-box .detail-list .detail .detail-img .detail-cover .plus-icon {
     position: absolute;
     left: 50%;
@@ -164,7 +163,7 @@ body {
     z-index: 2;
     font-size: 2rem;
     color: #fcf6f5;
-} */
+}
 
 .detail-box .detail-list .detail .detail-feature {
     padding: 20px 0;
@@ -312,10 +311,6 @@ body {
     background-size: cover;
     transition: all 0.5s;
     cursor: zoom-in;
-}
-
-.detail-box .etc-detail-list .detail .detail-img1:hover {
-    transform: scale(1.1);
 }
 
 .detail-box .etc-detail-list .detail .detail-img1.on {
@@ -537,7 +532,15 @@ body {
 } */
 
 #main .about_wrap .about_inner .skill_wrap .skill {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.9s;
+}
 
+#main .about_wrap .about_inner .skill_wrap .skill.on {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #main .about_wrap .about_inner .skill_wrap .skill .icon {
@@ -620,16 +623,23 @@ body {
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     padding: 20px 20px;
     box-sizing: border-box;
-    transform: rotate(-6deg) rotateX(0deg);
-    -ms-transform: rotate(-6deg) rotateX(0deg); /* IE 9 */
-    -webkit-transform: rotate(-6deg) rotateX(0deg); /* Safari and Chrome */
-    -o-transform: rotate(-6deg) rotateX(0deg); /* Opera */
-    -moz-transform: rotate(-6deg) rotateX(0deg); /* Firefox */
+    transform: rotate(-6deg) rotateX(0deg) translateY(-50px);
+    -ms-transform: rotate(-6deg) rotateX(0deg) translateY(-50px); /* IE 9 */
+    -webkit-transform: rotate(-6deg) rotateX(0deg) translateY(-50px); /* Safari and Chrome */
+    -o-transform: rotate(-6deg) rotateX(0deg) translateY(-50px); /* Opera */
+    -moz-transform: rotate(-6deg) rotateX(0deg) translateY(-50px); /* Firefox */
     transition: all 0.5s;
     background: #fff;
     font-family: 'SDMiSaeng';
     margin-left: 2.5rem;
+    position: relative;
+    opacity: 0;
+    transition: all 1s;
+}
 
+#main .about_wrap .about_inner .right_wrap .license.on {
+    transform: rotate(-6deg) rotateX(0deg) translateY(0);
+    opacity: 1;
 }
 
 #main .about_wrap .about_inner .right_wrap .license:hover {
@@ -689,16 +699,26 @@ body {
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     padding: 20px 20px;
     box-sizing: border-box;
-    transform: rotate(6deg) rotateX(0deg);
-    -ms-transform: rotate(6deg) rotateX(0deg); /* IE 9 */
-    -webkit-transform: rotate(6deg) rotateX(0deg); /* Safari and Chrome */
-    -o-transform: rotate(6deg) rotateX(0deg); /* Opera */
-    -moz-transform: rotate(6deg) rotateX(0deg); /* Firefox */
+    transform: rotate(6deg) rotateX(0deg) translateY(-50px);
+    -ms-transform: rotate(6deg) rotateX(0deg) translateY(-50px); /* IE 9 */
+    -webkit-transform: rotate(6deg) rotateX(0deg) translateY(-50px); /* Safari and Chrome */
+    -o-transform: rotate(6deg) rotateX(0deg) translateY(-50px); /* Opera */
+    -moz-transform: rotate(6deg) rotateX(0deg) translateY(-50px); /* Firefox */
     transition: all 0.5s;
     background: #fff;
     font-family: 'SDMiSaeng';
     margin-right: 2.5rem;
+    position: relative;
+    opacity: 0;
+    transition: all 1s;
 }
+
+#main .about_wrap .about_inner .right_wrap .memo .memo1.on {
+    transform: rotate(6deg) rotateX(0deg) translateY(0);
+    opacity: 1;
+}
+
+
 
 #main .about_wrap .about_inner .right_wrap .memo .memo1:hover {
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -827,7 +847,21 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
     margin: 20px 0;
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.9s;
 }
+
+#main .works_wrap .works_inner .works-box ul li.on {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* ---------------------------------------------------- */
+
+
 
 #main .works_wrap .works_inner .works-box ul li a {
     display: block;
@@ -1209,16 +1243,16 @@ body {
     max-width: 400px;
     height: 200px;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,0.5);
-    /* position: relative;
+    position: relative;
     transform: translateX(-100px);
     opacity: 0;
-    transition: all 0.9s; */
+    transition: all 0.9s;
 }
 
-/* #main .contact_wrap .contact_inner .biz-card.on {
+#main .contact_wrap .contact_inner .biz-card.on {
     transform: translateX(0);
     opacity: 1;
-} */
+}
 /* biz-card 애니메이션 js에서 value값 조정해서 구현 가능한지 체크할 것  */
 
 #main .contact_wrap .contact_inner .biz-card .img-box {
