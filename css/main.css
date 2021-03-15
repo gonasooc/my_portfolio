@@ -40,8 +40,10 @@ body {
 }
 
 .detail-box {
-    width: 600px;
-    height: 750px;
+    /* width: 600px; */
+    width: 40%;
+    /* height: 750px; */
+    height: 90%;
     position: relative;
     box-sizing: border-box;
     position: fixed;
@@ -1367,6 +1369,9 @@ body {
         font-size: 14px;
     }
    
+    #header .header_inner .gnb li:hover a::before {
+        transform: scaleX(0);
+    } 
 
     #main .about_wrap .about_inner .skill_wrap {
         width: 100%;
