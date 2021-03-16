@@ -29,7 +29,7 @@ $(function(){
 
     $('.responsive-list > li').click(function(){
         const IndexNum = $(this).index();
-        $('.detail-box').fadeIn();
+        $('.detail-box').fadeIn().addClass('on');
         $('.cover').fadeIn();
         $('.responsive-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
@@ -37,7 +37,7 @@ $(function(){
 
     $('.desktop-list > li').click(function(){
         const IndexNum = $(this).index();
-        $('.detail-box').fadeIn();
+        $('.detail-box').fadeIn().addClass('on');
         $('.cover').fadeIn();
         $('.desktop-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
@@ -45,7 +45,7 @@ $(function(){
 
     $('.mobile-list > li').click(function(){
         const IndexNum = $(this).index();
-        $('.detail-box').fadeIn();
+        $('.detail-box').fadeIn().addClass('on');
         $('.cover').fadeIn();
         $('.mobile-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
@@ -53,7 +53,7 @@ $(function(){
 
     $('.etc-list > li').click(function(){
         const IndexNum = $(this).index();
-        $('.detail-box').fadeIn();
+        $('.detail-box').fadeIn().addClass('on');
         $('.cover').fadeIn();
         $('.etc-detail-list .detail').eq(IndexNum).fadeIn();
         $('body, html').css({'overflow':'hidden'});
@@ -61,11 +61,10 @@ $(function(){
 
     $('.btn_detail-close, .cover').click(function(){
         $('.cover').fadeOut();
-        $('.detail-box').fadeOut();
+        $('.detail-box').fadeOut().removeClass('on');
         $('.detail').hide();
         $('body, html').css({'overflow':'auto'});
     });
-    
 
     $(window).scroll(function(){
         const windowScrollValue = $(this).scrollTop();
