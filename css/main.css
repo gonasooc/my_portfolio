@@ -325,6 +325,11 @@ body {
     transform: scale(3);
 }
 
+.detail-box .etc-detail-list .detail .detail-img2 {
+    background: url('../images/mockup/minislide_mockup.png') no-repeat center center;
+    background-size: cover;
+}
+
 
 .btn_top_wrap {
     position: fixed;
@@ -1082,6 +1087,11 @@ body {
 /* etc 썸네일 */
 #main .works_wrap .works_inner .works-box .etc-list li a .thumbnail-box1 {
     background: url('../images/youtube_output.png') no-repeat center center;
+    background-size: cover;
+}
+
+#main .works_wrap .works_inner .works-box .etc-list li a .thumbnail-box2 {
+    background: url('../images/mockup/minislide_mockup.png') no-repeat center center;
     background-size: cover;
 }
 
