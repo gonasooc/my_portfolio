@@ -330,6 +330,11 @@ body {
     background-size: cover;
 }
 
+.detail-box .etc-detail-list .detail .detail-img3 {
+    background: url('../images/mockup/todolist-mockup.png') no-repeat center center;
+    background-size: cover;
+}
+
 
 .btn_top_wrap {
     position: fixed;
@@ -1095,6 +1100,11 @@ body {
     background-size: cover;
 }
 
+#main .works_wrap .works_inner .works-box .etc-list li a .thumbnail-box3 {
+    background: url('../images/mockup/todolist-mockup.png') no-repeat center center;
+    background-size: cover;
+}
+
 
 
 /* 반응형 로고 */
@@ -1217,6 +1227,16 @@ body {
 
 #main .works_wrap .works_inner .works-box .etc-list li a .logo-box1 {
     background: url('../images/logos/youtube_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .etc-list li a .logo-box2 {
+    background: url('../images/javascript.png') no-repeat center center;
+    background-size: contain;
+}
+
+#main .works_wrap .works_inner .works-box .etc-list li a .logo-box3 {
+    background: url('../images/logos/vanilla_logo.png') no-repeat center center;
     background-size: contain;
 }
 
